@@ -8,6 +8,8 @@ do
   sleep 1
 done
 
+ls -l ${JENKINS_AGENT_WORKDIR}
+
 echo 'SUCCESS'
 
 exit 0

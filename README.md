@@ -10,5 +10,5 @@ docker push matefarkas/jenkinsfile-test-build:latest
 ## Build app
 
 ```
-docker-compose up
+docker-compose run jenkinsfile-test /build.sh
 ```

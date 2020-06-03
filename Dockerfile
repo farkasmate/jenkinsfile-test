@@ -4,4 +4,3 @@ WORKDIR /
 ADD build.sh .
 
 ENTRYPOINT ["sh"]
-CMD ["/build.sh"]
