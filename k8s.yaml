@@ -3,5 +3,4 @@ spec:
     - name: jnlp
       image: matefarkas/jenkins-jnlp-agent:3.29-slim-arm
     - name: build
-      image: busybox
-      tty: true
+      image: matefarkas/jenkinsfile-test-build:latest

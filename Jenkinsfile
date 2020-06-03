@@ -7,11 +7,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo onMain:'
-        sh 'hostname'
         container('build') {
-          sh 'echo onBuild:'
-          sh 'hostname'
+          sh '/build.sh'
         }
       }
     }
