@@ -4,3 +4,4 @@ spec:
       image: matefarkas/jenkins-jnlp-agent:3.29-slim-arm
     - name: build
       image: matefarkas/jenkinsfile-test-build:latest
+      tty: true
