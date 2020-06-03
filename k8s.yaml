@@ -1,13 +1,7 @@
 spec:
   containers:
-  - name: jnlp
-    image: matefarkas/jenkins-jnlp-agent:3.29-slim-arm
-    env:
-    - name: CONTAINER_ENV_VAR
-      value: jnlp
-  - name: busybox
-    image: busybox
-    tty: true
-    env:
-    - name: CONTAINER_ENV_VAR
-      value: build
+    - name: jnlp
+      image: matefarkas/jenkins-jnlp-agent:3.29-slim-arm
+    - name: build
+      image: busybox
+      tty: true
