@@ -1,0 +1,12 @@
+spec:
+  containers:
+  - name: jnlp
+    env:
+    - name: CONTAINER_ENV_VAR
+      value: jnlp
+  - name: busybox
+    image: busybox
+    tty: true
+    env:
+    - name: CONTAINER_ENV_VAR
+      value: build
